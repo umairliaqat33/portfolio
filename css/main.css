@@ -2928,9 +2928,13 @@ header {
  * ------------------------------------------------------------------- 
  */
 footer {
-	padding-bottom: 3rem;
+	padding: 3rem 0;
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
+	background-color: #000;
+	color: #fff;
+	position: relative;
+	/* Needed for the arrow's absolute positioning */
 }
 
 footer a,
@@ -2945,6 +2949,7 @@ footer a:focus {
 
 footer .row {
 	max-width: 900px;
+	margin: 0 auto;
 }
 
 footer .social {
@@ -2985,6 +2990,8 @@ footer .copyright span:last-child::after {
 	display: none;
 }
 
+
+
 /**
  * responsive:
  * footer
@@ -3016,11 +3023,11 @@ footer .copyright span:last-child::after {
  * ------------------------------------------------------------------- 
  */
 #go-top {
-	position: fixed;
-	bottom: 0;
-	right: 0;
-	z-index: 600;
-	display: none;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 10;
+	/* display: none; */
 }
 
 #go-top a {
