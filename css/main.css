@@ -1062,6 +1062,66 @@ input::-moz-focus-inner {
 	margin: 0;
 }
 
+.media-video {
+	display: flex;
+	justify-content: center;
+	/* Center horizontally */
+	align-items: center;
+	/* Center vertically */
+}
+
+.media-carousel img {
+	height: 400px;
+	/* Adjust the height of the images */
+	object-fit: cover;
+	/* Ensures the image fits properly without distortion */
+}
+
+.carousel-container {
+	width: 100%;
+	overflow: hidden;
+	/* Hides overflow of images */
+	position: relative;
+	text-align: center;
+	/* Center the images */
+}
+
+.carousel-slide {
+	display: flex;
+	/* Images are placed side-by-side */
+	transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+	width: 100%;
+	/* Adjust the image width */
+	max-height: 400px;
+	/* Set a maximum height for images */
+	object-fit: cover;
+	/* Make sure images fit well */
+}
+
+/* Styling for the control buttons */
+#prevBtn,
+#nextBtn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+}
+
+#prevBtn {
+	left: 10px;
+}
+
+#nextBtn {
+	right: 10px;
+}
+
 .pull-quote blockquote:before {
 	content: none;
 }
